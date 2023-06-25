@@ -1,0 +1,167 @@
+body {
+  font-family: Impact, sans-serif;
+  margin: 0;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 50% 100%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+
+#text {
+  background: linear-gradient(45deg, #00BF63, #248f5d, rgb(0, 253, 144));
+  background-size: 300% 300%;
+  animation: gradient 7s ease-in-out infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+header {
+  background-image: 
+  url(https://catherineasquithgallery.com/uploads/posts/2021-03/1614641527_36-p-fon-gta-dlya-fotoshopa-37.jpg);
+  width: auto;
+  background-attachment: fixed;
+}
+
+
+header h1 {
+  margin: 0;
+  margin-left: 35;
+  color:transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, #00BF63, #03763E);
+}
+
+header h2 {
+  font-size: 20px;
+  color:transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, #00BF63, #03763E);
+  margin: 0;
+}
+
+img {
+  display: block;
+  }
+
+list {
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  padding: 30px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+  
+navbar ul{
+  list-style: none;
+  display: flex;
+  color: #fff;
+  padding:0;
+  text-decoration: none;
+}
+  
+navbar ul li {
+  margin-right: 15px;
+}
+  
+navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+  
+navbar ul li a:hover {
+  color: lime;
+}
+
+main {
+    padding: 100px;
+  }
+  
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.card {
+  width: 350px;
+  height: 350px;
+  perspective: 1000px;
+  margin-bottom: 20px;
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.card-front {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-back {
+  background-color: #00BF63;
+  transform: rotateY(180deg);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+
+h3 {
+  margin-bottom: 5px;
+  font-family: Impact, sans-serif;
+}
+
+h4 {
+  font-size: 14px;
+  font-family: Impact, sans-serif;
+}
+.card-back h4 {
+  
+  font-family: Impact, sans-serif;
+  
+}
+
+footer {
+	background-color: #333;
+	color: #00BF63;
+	padding: 15px;
+	text-align: center;
+}
